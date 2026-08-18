@@ -1,0 +1,95 @@
+/* Hallmark · genre: atmospheric · macrostructure: studied-DNA (Elegencia)
+ * theme: studied-DNA · source: thememarch.com/elegencia
+ * paper: #040D10 · accent: #FFD28D · display: Baskervville · body: Prompt
+ * nav: Elegencia dual-header · footer: Elegencia multi-column
+ * pre-emit critique: P4 H5 E4 S5 R4 V5
+ */
+
+:root {
+  --color-paper: #040d10;
+  --color-paper-2: #091e24;
+  --color-paper-3: #0d2830;
+  --color-ink: #ffffff;
+  --color-ink-2: #c8c8c8;
+  --color-ink-muted: #8a8a8a;
+  --color-rule: #4f4836;
+  --color-accent: #ffd28d;
+  --color-accent-hover: #ffe0ad;
+  --color-accent-ink: #040d10;
+  --color-accent-soft: rgb(255 210 141 / 0.12);
+  --color-focus: #ffd28d;
+  --color-hero: #040d10;
+  --color-chair: #ffd28d;
+  --color-brick: #4f4836;
+  --color-cream: #ffd28d;
+  --color-wood: #4f4836;
+  --color-plate: #091e24;
+  --color-plate-dark: #051114;
+
+  --font-display: var(--font-baskervville), "Baskervville", Georgia, serif;
+  --font-body: var(--font-prompt), "Prompt", system-ui, sans-serif;
+  --font-mono: var(--font-prompt), "Prompt", system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: clamp(1.75rem, 4vw, 3rem);
+  --text-display-s: clamp(2.25rem, 5vw, 3.75rem);
+  --text-display: clamp(2.75rem, 7vw, 5rem);
+  --text-hero: clamp(3rem, 9vw, 5rem);
+  --text-caption: 0.75rem;
+
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 7rem;
+  --space-4xl: 9rem;
+
+  --page-gutter: clamp(1.25rem, 4vw, 2.75rem);
+  --page-max: 88rem;
+  --rule-hair: 1px;
+  --banner-height: 5.5rem;
+  --header-top-height: 4.5rem;
+  --z-sticky: 40;
+  --z-nav: 50;
+  --z-preloader: 9999;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-hero: cubic-bezier(0.7, -0.56, 0.27, 1.6);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-frame: 0;
+
+  --background: var(--color-paper);
+  --foreground: var(--color-ink-2);
+  --primary: var(--color-accent);
+  --primary-foreground: var(--color-accent-ink);
+  --muted: var(--color-paper-2);
+  --muted-foreground: var(--color-ink-muted);
+  --border: var(--color-rule);
+  --ring: var(--color-focus);
+  --radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-micro: 0ms;
+    --dur-short: 0ms;
+    --dur-long: 120ms;
+  }
+}
