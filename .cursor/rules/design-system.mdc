@@ -1,0 +1,25 @@
+---
+description: Enforce restaurant design system and anti-slop skills for all UI work
+globs: ["**/*.{tsx,jsx,vue,svelte,css,scss,html}"]
+alwaysApply: false
+---
+
+# Restaurant design system
+
+Before generating or editing any visual UI in this project:
+
+1. Read `DESIGN.md` at the project root. Use ONLY the tokens, typography, layout, and motion rules defined there.
+2. Apply the **refero-design** skill (`.cursor/skills/refero-design/`) — research references before implementing; never design from generic AI defaults.
+3. Apply the **hallmark** skill (`.cursor/skills/hallmark/`) — use editorial genre for restaurant work; run slop-test gates before handoff.
+
+## Hard rules
+
+- NEVER use Inter, system-ui, indigo/violet accents, or `repeat(3, 1fr)` feature grids
+- NEVER use `transition: all`, pure `#fff`/`#000`, or invented metrics/testimonials
+- ALWAYS use asymmetric layouts, named CSS tokens, and prefers-reduced-motion fallbacks
+- ALWAYS vary CTA copy by section context
+- When building menu/reservation flows, prioritize clarity and touch-friendly mobile layout
+
+## When unsure
+
+Run `hallmark audit` mentally against the slop checklist in `.cursor/skills/hallmark/references/slop-test.md` before finishing.
